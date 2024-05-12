@@ -1,0 +1,35 @@
+/* Styles for grid container */
+#container {
+    display: grid;
+    border: 1px solid black;
+    width: 960px; /* Total width of the grid */
+    height: 960px; /* Adjust height accordingly */
+    margin: auto; /* Center the grid */
+}
+
+/* Define number of rows and columns for the grid */
+#container {
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+/* Styles for grid squares */
+.grid-item {
+    border: 1px solid black;
+}
+
+/* Style for the reset button */
+#resetButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #0056b3;
+}
